@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bem-vindo!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="animated-bg"></div>
+
+<!-- Cabeçalho com botões -->
+<div class="cabecalho"> 
+  <div class="botao1"><button onclick="document.getElementById('modalCadastro').style.display = 'block'">Cadastre aqui</button></div>
+  <div class="botao2"><button>Procurar Grupo</button></div>
+</div>
+
+<header>
+  <h1></h1>
+</header>
+
+<main>
+  <p>Caso nao tenho ideia de jogos , aqui temos algumas opçoes só clicar baixar , jogar e completar times conhecendo seus amigos ideais.</p>
+
+  <!-- Links dos jogos -->
+  <div class="jogos">
+    <div class="jogo1">
+      <a href="https://playvalorant.com/pt-br/" target="_blank"><img src="/img/valorant.jpg">Valorant</a>
+     
+    </div>
+    <div class="jogo2">
+      <a href="https://www.dota2.com/home" target="_blank"><img src="/img/dota2.jpg">Dota 2</a>
+      
+    </div>
+    <div class="jogo3">
+      <a href="https://www.fortnite.com/?lang=pt-BR" target="_blank"><img src="/img/fortinite.jpg">Fortnite</a>
+      
+    </div>
+    <div class="jogo4">
+      <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank"><img src="/img/csgo.jpg">CS:GO</a>
+      
+    </div>
+    <div class="jogo5">
+      <a href="https://www.callofduty.com/br/pt/store/games/warzone" target="_blank"><img src="/img/warzone.jpg">Warzone</a>
+     
+    </div>
+    <div class="jogo6">
+      <a href="https://www.leagueoflegends.com/pt-br/download/" target="_blank"><img src="/img/lol.jpg">League Of Legends</a>
+    
+    </div>
+    <div class="jogo7">
+      <a href="https://www.leagueoflegends.com/pt-br/download/" target="_blank"><img src="/img/marvel.jpg">Marvels Rivals</a>
+      
+    </div>
+    <div class="jogo8">
+      <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege" target="_blank"><img src="/img/Rainbow.jpg">Rainbow six</a>
+     </div>
+  </div>
+</main>
+
+
+<div class="modal" id="modalCadastro">
+  <form class="modal-content" action="https://formsubmit.co/SEUEMAIL@EXEMPLO.COM" method="POST">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <h2>Cadastre-se</h2>
+    <p>Receba novidades e ofertas no seu e-mail!</p>
+    
+    <input type="text" name="nome" placeholder="Seu nome" required />
+    <input type="email" name="email" placeholder="Seu e-mail" required />
+    
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://sua-url-de-sucesso.com/obrigado.html">
+    
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>
+
+<!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5599999999999?text=Olá%2C%20quero%20saber%20mais%20sobre%20o%20site!" 
+   class="whatsapp-button" target="_blank" title="Fale conosco no WhatsApp"><img src="/IconesImg/whatsapp.png">
+</a>
+
+<!-- Rodapé com redes sociais -->
+<footer>
+  <h2>Nos siga nas Redes Sociais</h2>
+  <div class="Instagram">
+    <a href="https://www.instagram.com/jhonathancosta71/" target="_blank">
+      <img src="/IconesImg/instagram.png">
+    </a><div class="Discord">
+    <a href="https://discord.gg/YKtkXSRmYJ" target="_blank"><img src="/IconesImg/discord.png"></a>
+  </div>
+  </div>
+  
+</footer>
+
+<!-- java -->
+<script>
+  window.onload = function () {
+    document.getElementById("modalCadastro").style.display = "block";
+  };
+
+  function fecharModal() {
+    document.getElementById("modalCadastro").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
