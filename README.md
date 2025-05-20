@@ -23,18 +23,14 @@ Bem-vindo ao **Games Party**! Um site temático para os apaixonados por games, c
    git clone https://github.com/seu-usuario/Games-Party-main.git
 Acesse a pasta do projeto:
 
-bash
-Copiar
-Editar
+
 cd Games-Party-main
 Abra o arquivo Index.html em seu navegador.
 
 🛠 Tecnologias Utilizadas
-HTML5
-
-CSS3
-
-JavaScript Vanilla
+- HTML5
+- CSS3
+- JavaScript Vanilla
 
 💡 Funcionalidades
 Layout com imagens dinâmicas dos jogos.
